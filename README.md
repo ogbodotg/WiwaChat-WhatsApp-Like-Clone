@@ -1,6 +1,13 @@
 # Wiwa Chat - A WhatsApp Clone in Flutter
 
 A beautiful and fully functional WhatsApp UI clone in Flutter.
+## Screenshots
+https://github.com/ogbodotg/WiwaChat-WhatsApp-Like-Clone/blob/master/screenshots/chatPage.png
+https://github.com/ogbodotg/WiwaChat-WhatsApp-Like-Clone/blob/master/screenshots/chatPage1.png
+https://github.com/ogbodotg/WiwaChat-WhatsApp-Like-Clone/blob/master/screenshots/chatPage%20with%20emoji.png
+https://github.com/ogbodotg/WiwaChat-WhatsApp-Like-Clone/blob/master/screenshots/chatPage%20with%20attachment.png
+https://github.com/ogbodotg/WiwaChat-WhatsApp-Like-Clone/blob/master/screenshots/chatPage%20popup.png
+https://github.com/ogbodotg/WiwaChat-WhatsApp-Like-Clone/blob/master/screenshots/captureImage.png
 
 ## Getting Started
 
