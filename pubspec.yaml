@@ -72,6 +72,9 @@ flutter:
         - asset: fonts/OpenSans-Regular.ttf
         - asset: fonts/OpenSans-Italic.ttf
           style: italic
+    - family: Signatra
+      fonts:
+        - asset: fonts/Signatra.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
