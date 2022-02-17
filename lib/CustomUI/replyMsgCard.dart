@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ReplyMessageCard extends StatelessWidget {
-  const ReplyMessageCard({Key key}) : super(key: key);
+  const ReplyMessageCard({Key key, this.msg, this.time}) : super(key: key);
+  final String msg;
+  final String time;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,7 @@ class ReplyMessageCard extends StatelessWidget {
                 padding: const EdgeInsets.only(
                     left: 10, right: 60, top: 5, bottom: 20),
                 child: Text(
-                  "This is the guest account reply message area.",
+                  msg,
                   style: TextStyle(
                     fontSize: 16,
                   ),
@@ -31,7 +33,7 @@ class ReplyMessageCard extends StatelessWidget {
               Positioned(
                 bottom: 4,
                 right: 10,
-                child: Text("time",
+                child: Text(time,
                     style: TextStyle(fontSize: 13, color: Colors.grey[600])),
               )
             ]),

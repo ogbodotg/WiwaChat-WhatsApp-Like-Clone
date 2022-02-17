@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ChatMessageCard extends StatelessWidget {
-  const ChatMessageCard({Key key}) : super(key: key);
+  const ChatMessageCard({Key key, this.msg, this.time}) : super(key: key);
+  final String msg;
+  final String time;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,7 @@ class ChatMessageCard extends StatelessWidget {
                 padding: const EdgeInsets.only(
                     left: 10, right: 60, top: 5, bottom: 20),
                 child: Text(
-                  "This is our text chat area for chat account owner.",
+                  msg,
                   style: TextStyle(
                     fontSize: 16,
                   ),
@@ -33,7 +35,7 @@ class ChatMessageCard extends StatelessWidget {
                 right: 10,
                 child: Row(
                   children: [
-                    Text("time",
+                    Text(time,
                         style:
                             TextStyle(fontSize: 13, color: Colors.grey[600])),
                     SizedBox(

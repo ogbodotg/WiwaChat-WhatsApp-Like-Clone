@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:wiwa_chat/Model/chatModel.dart';
 import 'package:wiwa_chat/Pages/cameraPage.dart';
 import 'package:wiwa_chat/Pages/chat.dart';
+import 'package:wiwa_chat/Pages/statusPage.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key key}) : super(key: key);
+  const HomeScreen({Key key, this.chatModels, this.chatUser}) : super(key: key);
+  final List<ChatModel> chatModels;
+  final ChatModel chatUser;
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -77,8 +81,8 @@ class _HomeScreenState extends State<HomeScreen>
         controller: _controller,
         children: [
           CameraPage(),
-          ChatPage(),
-          Text("Status"),
+          ChatPage(chatModels: widget.chatModels, chatUser: widget.chatUser),
+          StatusPage(),
           Text("Calls"),
         ],
       ),

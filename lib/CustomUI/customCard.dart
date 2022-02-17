@@ -3,8 +3,9 @@ import 'package:wiwa_chat/Model/chatModel.dart';
 import 'package:wiwa_chat/Pages/individualChats.dart';
 
 class CustomCard extends StatelessWidget {
-  const CustomCard({Key key, this.chatsModel}) : super(key: key);
+  const CustomCard({Key key, this.chatsModel, this.chatUser}) : super(key: key);
   final ChatModel chatsModel;
+  final ChatModel chatUser;
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +16,7 @@ class CustomCard extends StatelessWidget {
             MaterialPageRoute(
                 builder: (context) => IndividualChats(
                       chatsModel: chatsModel,
+                      chatUser: chatUser,
                     )));
       },
       child: Column(
